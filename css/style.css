@@ -256,7 +256,7 @@ body {
 }
 
 .profile-name {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', bold;
   font-weight: 800;
   font-size: 25xpx;
   color: var(--text-primary);
@@ -325,7 +325,7 @@ body {
 
 /* Heading */
 .stat-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', bold;
   font-size: 8px;
   font-weight: 600;
   letter-spacing: 1px;
