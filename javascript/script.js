@@ -13,7 +13,7 @@ window.portfolioNav = loadSection;
 async function fetchSection(name) {
   if (cache[name]) return cache[name];
   try {
-    const res = await fetch(`${name}.html`);
+    const res = await fetch(`pages/${name}.html`);
     if (!res.ok) throw new Error(`Failed to load ${name}.html`);
     const html = await res.text();
     cache[name] = html;
