@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css\home.css" />
+</head>
+
+<body>
+    <section class="section-wrap home-wrap">
+        <!-- Hero -->
+        <div class="hero-grid">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Open to Opportunities</span>
+                </div>
+
+                <h2 class="hero-headline">
+                    <span class="hero-line">Data Science</span>
+                    <span class="hero-line hero-line--accent">Enthusiast</span>
+                    <span class="hero-line hero-subline">Turning
+                        <em class="gradient-text">Data</em>
+                        into
+                        <em class="gradient-text-amber">Decisions</em>
+                    </span>
+                </h2>
+
+                <p class="hero-desc">
+                    Eager to learn, explore, and build intelligent solutions using
+                    data, machine learning, and AI to solve real-world problems.
+                </p>
+
+                <div class="hero-cta">
+                    <button class="cta-primary" onclick="window.portfolioNav('projects')">
+                        <span>View My Projects</span>
+                        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 10h12M10 4l6 6-6 6" />
+                        </svg>
+                    </button>
+                    <button class="cta-secondary">
+                        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M10 3v10M5 9l5 5 5-5" />
+                            <path d="M3 17h14" />
+                        </svg>
+                        <span>Download Resume</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-visual">
+                    <div class="visual-ring visual-ring-1"></div>
+                    <div class="visual-ring visual-ring-2"></div>
+                    <div class="visual-ring visual-ring-3"></div>
+                    <div class="visual-center">
+                        <svg class="visual-icon" viewBox="0 0 80 80" fill="none">
+                            <rect x="8" y="48" width="8" height="24" rx="2" fill="var(--accent-teal)" opacity="0.9" />
+                            <rect x="22" y="36" width="8" height="36" rx="2" fill="var(--accent-teal)" opacity="0.7" />
+                            <rect x="36" y="22" width="8" height="50" rx="2" fill="var(--accent-amber)" opacity="0.9" />
+                            <rect x="50" y="30" width="8" height="42" rx="2" fill="var(--accent-teal)" opacity="0.7" />
+                            <rect x="64" y="14" width="8" height="58" rx="2" fill="var(--accent-amber)" opacity="0.5" />
+                            <path d="M12 44 L26 32 L40 18 L54 26 L68 10" stroke="var(--accent-rose)" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="44" r="3" fill="var(--accent-rose)" />
+                            <circle cx="26" cy="32" r="3" fill="var(--accent-rose)" />
+                            <circle cx="40" cy="18" r="3" fill="var(--accent-rose)" />
+                            <circle cx="54" cy="26" r="3" fill="var(--accent-rose)" />
+                            <circle cx="68" cy="10" r="3" fill="var(--accent-rose)" />
+                        </svg>
+                    </div>
+
+                    <!-- Floating chips -->
+                    <div class="float-chip chip-1">
+                        <span class="chip-icon">🧠</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <div class="float-chip chip-2">
+                        <span class="chip-icon">📊</span>
+                        <span>Data Analysis</span>
+                    </div>
+                    <div class="float-chip chip-3">
+                        <span class="chip-icon">⚡</span>
+                        <span>Python Expert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <span class="stat-num">9.0</span>
+                <span class="stat-desc">CGPA at Indus University</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <span class="stat-num">8+</span>
+                <span class="stat-desc">Tech Skills Acquired</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <span class="stat-num">3</span>
+                <span class="stat-desc">Live Projects Built</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <span class="stat-num">3</span>
+                <span class="stat-desc">Certifications Earned</span>
+            </div>
+        </div>
+
+        <!-- Quick Nav Cards -->
+        <div class="quick-nav-grid">
+            <button class="qnav-card" onclick="window.portfolioNav('projects')">
+                <div class="qnav-icon">📂</div>
+                <div class="qnav-text">
+                    <span class="qnav-title">Projects</span>
+                    <span class="qnav-sub">3 ML projects</span>
+                </div>
+                <svg class="qnav-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 10h12M10 4l6 6-6 6" />
+                </svg>
+            </button>
+            <button class="qnav-card" onclick="window.portfolioNav('skills')">
+                <div class="qnav-icon">⚡</div>
+                <div class="qnav-text">
+                    <span class="qnav-title">Skills</span>
+                    <span class="qnav-sub">Python, ML, Data Viz</span>
+                </div>
+                <svg class="qnav-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 10h12M10 4l6 6-6 6" />
+                </svg>
+            </button>
+            <button class="qnav-card" onclick="window.portfolioNav('certificates')">
+                <div class="qnav-icon">🏆</div>
+                <div class="qnav-text">
+                    <span class="qnav-title">Certificates</span>
+                    <span class="qnav-sub">IBM, Stanford, deeplearning.ai</span>
+                </div>
+                <svg class="qnav-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 10h12M10 4l6 6-6 6" />
+                </svg>
+            </button>
+            <button class="qnav-card" onclick="window.portfolioNav('contact')">
+                <div class="qnav-icon">✉️</div>
+                <div class="qnav-text">
+                    <span class="qnav-title">Contact</span>
+                    <span class="qnav-sub">Let's connect!</span>
+                </div>
+                <svg class="qnav-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 10h12M10 4l6 6-6 6" />
+                </svg>
+            </button>
+        </div>
+    </section>
+</body>
+</html>
