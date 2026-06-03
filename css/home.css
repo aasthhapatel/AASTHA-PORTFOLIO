@@ -35,7 +35,7 @@
   margin-bottom: 18px;
 }
 .hero-line {
-  font-family: 'Syne', sans-serif;
+  font-family: 'bold', sans-serif;
   font-weight: 800;
   font-size: 38px;
   letter-spacing: -1.5px;
@@ -66,8 +66,8 @@
   background-clip: text;
 }
 .gradient-text-amber {
-  font-style: normal;
-  background: linear-gradient(135deg, var(--accent-amber), #fbbf24);
+  font-style: bold;
+  background: linear-gradient(135deg, var(--accent-teal),#34d399);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -127,8 +127,8 @@
 }
 .cta-secondary svg { width: 16px; height: 16px; }
 .cta-secondary:hover {
-  border-color: var(--accent-amber);
-  color: var(--accent-amber);
+  border-color: var(--accent-teal-d);
+  color: var(--accent-teal-d);
 }
 
 /* Hero Right Visual */
