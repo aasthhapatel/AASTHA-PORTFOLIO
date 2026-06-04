@@ -119,13 +119,14 @@
 
 .cta-secondary {
   display: flex; align-items: center; gap: 8px;
-  padding: 12px 22px;
+  padding: 10px 20px;
   background: transparent;
   color: var(--text-secondary);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
+  margin-bottom: 10px;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -204,6 +205,79 @@
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
+}
+
+.education-timeline{
+    margin-top:1px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.edu-card{
+    flex:1;
+
+    background:#151d29;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:16px;
+
+    padding:10px;
+
+    transition:.3s ease;
+}
+
+.edu-card:hover{
+    transform:translateY(-4px);
+
+    border-color:#14b8a6;
+}
+
+.edu-year{
+    color:#14b8a6;
+    font-size:12px;
+    font-weight:600;
+}
+
+.edu-card h3{
+    margin-top:10px;
+    color:white;
+    font-size:20px;
+}
+
+.edu-card p{
+    color:#94a3b8;
+    margin-top:6px;
+}
+
+.edu-score{
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    background:rgba(20,184,166,.1);
+
+    color:#14b8a6;
+}
+
+.edu-line{
+    width:40px;
+    height:2px;
+
+    background:#14b8a6;
+
+    opacity:.5;
+}
+.edu-heading{
+    font-size:30px;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:1px;
 }
 
 /* ── STATS BAR ── */
