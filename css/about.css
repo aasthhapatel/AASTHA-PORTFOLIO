@@ -14,8 +14,8 @@
 .about-bio { display: flex; flex-direction: column; gap: 16px; }
 .bio-icon-row { display: flex; align-items: center; gap: 14px; }
 .bio-big-icon { font-size: 42px; }
-.bio-title-block h3 {
-  font-family: 'Syne', sans-serif;
+.bio-title-block h2 {
+  font-family: 'bold', sans-serif;
   font-weight: 800;
   font-size: 20px;
   color: var(--text-primary);
@@ -41,60 +41,66 @@
   color: var(--accent-teal);
 }
 
-/* Education Card */
-.edu-block { display: flex; flex-direction: column; gap: 16px; }
-.edu-card { display: flex; flex-direction: column; gap: 18px; }
-.edu-top { display: flex; align-items: center; gap: 14px; }
-.edu-seal { width: 54px; height: 54px; flex-shrink: 0; }
-.edu-uni {
-  font-family: 'Syne', sans-serif;
-  font-weight: 800;
-  font-size: 17px;
-  color: var(--text-primary);
+.focus-timeline{
+    position:relative;
+    padding-left:25px;
 }
-.edu-degree { font-size: 12px; color: var(--text-secondary); margin-top: 3px; }
 
-.cgpa-display {
-  background: linear-gradient(135deg, rgba(245,158,11,0.07), rgba(20,184,166,0.04));
-  border: 1px solid rgba(245,158,11,0.2);
-  border-radius: var(--radius-sm);
-  padding: 14px 16px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.cgpa-left { flex-shrink: 0; }
-.cgpa-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; display: block; margin-bottom: 4px; }
-.cgpa-number {
-  font-family: 'Syne', sans-serif;
-  font-size: 36px;
-  font-weight: 800;
-  color: var(--accent-amber);
-  line-height: 1;
-}
-.cgpa-denom { font-size: 16px; color: var(--text-muted); }
-.cgpa-bar-wrap { flex: 1; display: flex; flex-direction: column; gap: 8px; }
-.cgpa-bar {
-  height: 8px;
-  background: rgba(255,255,255,0.06);
-  border-radius: 100px;
-  overflow: hidden;
-}
-.cgpa-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent-amber), #fbbf24);
-  border-radius: 100px;
-  animation: barGrow 1.2s cubic-bezier(0.4, 0, 0.2, 1) both;
-}
-@keyframes barGrow { from { width: 0 !important; } }
-.cgpa-pct { font-size: 11px; color: var(--accent-amber); font-weight: 500; }
+.focus-timeline::before{
+    content:'';
+    position:absolute;
+    left:6px;
+    top:8px;
+    bottom:8px;
 
-.edu-meta { display: flex; flex-direction: column; gap: 8px; }
-.edu-meta-item {
-  display: flex; align-items: center; gap: 8px;
-  font-size: 12px; color: var(--text-secondary);
+    width:2px;
+    background:rgba(20,184,166,.25);
 }
-.edu-meta-item svg { width: 14px; height: 14px; color: var(--accent-teal); flex-shrink: 0; }
+
+.focus-item{
+    position:relative;
+    margin-bottom:24px;
+}
+
+.focus-item:last-child{
+    margin-bottom:0;
+}
+
+.focus-dot{
+    position:absolute;
+    left:-25px;
+    top:8px;
+
+    width:12px;
+    height:12px;
+
+    border-radius:50%;
+
+    background:var(--accent-teal);
+
+    box-shadow:0 0 12px rgba(20,184,166,.4);
+}
+
+.focus-year{
+    color:var(--accent-teal);
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.focus-content h5{
+    margin-top:6px;
+    margin-bottom:4px;
+
+    font-size:17px;
+    color:var(--text-primary);
+}
+
+.focus-content p{
+    font-size:12px;
+    color:var(--text-secondary);
+    line-height:1.5;
+}
 
 /* Interests */
 .interests-card { 
@@ -122,3 +128,4 @@
 }
 .interest-item:hover { border-color: var(--border); color: var(--text-primary); }
 .int-icon { font-size: 16px; }
+
