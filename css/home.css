@@ -37,7 +37,7 @@
 .hero-line {
   font-family: 'bold', sans-serif;
   font-weight: 800;
-  font-size: 38px;
+  font-size: 70px;
   letter-spacing: -1.5px;
   color: var(--text-primary);
   line-height: 1.05;
@@ -85,6 +85,10 @@
 .hero-cta {
   display: flex; gap: 12px; align-items: center;
   animation: heroReveal 0.6s 0.4s both;
+}
+.hero-btn.secondary {
+    text-decoration: none;
+    color: var(--accent-teal); /* or whatever color your button text uses */
 }
 .cta-primary {
   display: flex; align-items: center; gap: 8px;
@@ -140,6 +144,7 @@
   position: relative;
   width: 260px; height: 260px;
   display: flex; align-items: center; justify-content: center;
+    left: -80px;
 }
 .visual-ring {
   position: absolute;
@@ -195,6 +200,7 @@
 .chip-1 { top: 10px; right: -30px; animation-delay: 0s; }
 .chip-2 { bottom: 40px; right: -40px; animation-delay: -1s; }
 .chip-3 { bottom: 10px; left: -20px; animation-delay: -2s; }
+.chip-4 { top: 30px; left: -30px; animation-delay: -3s; }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
