@@ -636,7 +636,7 @@ body {
 }
 
 .section-tag {
-  font-family: 'DM Mono', monospace;
+  font-family: 'bold',;
   font-size: 10.5px;
   color: var(--accent-teal);
   background: var(--accent-teal-g);
@@ -648,7 +648,7 @@ body {
 }
 
 .section-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'bold', sans-serif;
   font-weight: 800;
   font-size: 26px;
   color: var(--text-primary);

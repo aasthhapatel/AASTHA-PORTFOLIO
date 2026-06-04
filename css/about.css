@@ -1,59 +1,146 @@
-.about-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+.about-wrap{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 340px;
-  gap: 20px;
+/* GRID */
+
+.about-grid{
+    display:grid;
+    grid-template-columns: 1fr 380px;
+    gap:40px;
+    align-items:start;
 }
 
-/* Bio Card */
-.about-bio { display: flex; flex-direction: column; gap: 16px; }
-.bio-icon-row { display: flex; align-items: center; gap: 14px; }
-.bio-big-icon { font-size: 42px; }
-.bio-title-block h2 {
-  font-family: 'bold', sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  color: var(--text-primary);
+/* LEFT */
+
+.about-left{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
 }
-.bio-title-block span { font-size: 12px; color: var(--accent-teal); }
-.bio-text {
-  font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.75;
+
+/* RIGHT */
+
+.about-right{
+    position:sticky;
+    top:20px;
 }
-.bio-text strong { color: var(--accent-amber); font-weight: 600; }
-.bio-tags {
-  display: flex; flex-wrap: wrap; gap: 8px;
-  padding-top: 8px;
-  border-top: 1px solid var(--border);
+
+/* HEADER */
+
+.bio-icon-row{
+    display:flex;
+    align-items:center;
+    gap:20px;
 }
-.bio-tag {
-  padding: 5px 12px;
-  background: var(--accent-teal-g);
-  border: 1px solid rgba(20,184,166,0.2);
-  border-radius: 100px;
-  font-size: 11.5px;
-  color: var(--accent-teal);
+
+.bio-big-icon{
+    font-size:52px;
 }
+
+.bio-name{
+    font-size:52px;
+    font-weight:800;
+    line-height:1;
+    color:var(--text-primary);
+}
+
+.bio-subtitle{
+    display:block;
+    margin-top:8px;
+
+    color:var(--accent-teal);
+
+    font-size:18px;
+    font-weight:500;
+}
+
+/* ABOUT BLOCK */
+
+.about-block{
+    padding:24px 28px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(20,184,166,.12);
+
+    border-radius:18px;
+}
+
+.about-block h4{
+    font-size:22px;
+    margin-bottom:12px;
+    color:var(--text-primary);
+}
+
+.about-block p{
+    font-size:16px;
+    line-height:1.9;
+    color:var(--text-secondary);
+}
+
+/* TAGS */
+
+.bio-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.bio-tag{
+    padding:10px 16px;
+
+    border-radius:100px;
+
+    background:rgba(20,184,166,.08);
+
+    border:1px solid rgba(20,184,166,.18);
+
+    color:var(--accent-teal);
+
+    font-size:13px;
+}
+
+/* INTEREST CARD */
+
+.interests-card{
+    padding:24px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(20,184,166,.12);
+
+    border-radius:20px;
+}
+
+.interests-title{
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:24px;
+
+    color:var(--text-primary);
+}
+
+/* TIMELINE */
 
 .focus-timeline{
     position:relative;
-    padding-left:25px;
+    padding-left:28px;
 }
 
 .focus-timeline::before{
     content:'';
+
     position:absolute;
+
     left:6px;
     top:8px;
     bottom:8px;
 
     width:2px;
+
     background:rgba(20,184,166,.25);
 }
 
@@ -68,7 +155,8 @@
 
 .focus-dot{
     position:absolute;
-    left:-25px;
+
+    left:-28px;
     top:8px;
 
     width:12px;
@@ -83,8 +171,10 @@
 
 .focus-year{
     color:var(--accent-teal);
+
     font-size:11px;
     font-weight:600;
+
     letter-spacing:1px;
 }
 
@@ -92,40 +182,14 @@
     margin-top:6px;
     margin-bottom:4px;
 
-    font-size:17px;
+    font-size:18px;
+
     color:var(--text-primary);
 }
 
 .focus-content p{
-    font-size:12px;
+    font-size:13px;
+    line-height:1.6;
+
     color:var(--text-secondary);
-    line-height:1.5;
 }
-
-/* Interests */
-.interests-card { 
-    display: flex; flex-direction: column; gap: 16px;
-    background: var(--bg-surface);
-    border-radius: var(--radius-sm);
-    padding: 18px 20px;
-}
-.interests-title {
-  font-family: 'Syne', sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 14px;
-}
-.interests-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-.interest-item {
-  display: flex; align-items: center; gap: 8px;
-  font-size: 12px; color: var(--text-secondary);
-  padding: 8px 10px;
-  background: var(--bg-surface);
-  border-radius: var(--radius-sm);
-  border: 1px solid transparent;
-  transition: var(--transition);
-}
-.interest-item:hover { border-color: var(--border); color: var(--text-primary); }
-.int-icon { font-size: 16px; }
-
