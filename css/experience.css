@@ -1,11 +1,11 @@
-.exp-layout {
+/* .exp-layout {
   display: grid;
   grid-template-columns: 1fr 280px;
   gap: 20px;
   align-items: start;
 }
 
-/* Timeline */
+Timeline
 .timeline { display: flex; flex-direction: column; gap: 20px; }
 .timeline-item { display: flex; gap: 14px; }
 
@@ -88,7 +88,7 @@
   color: var(--text-muted);
 }
 
-/* Right Panel */
+Right Panel
 .exp-right { display: flex; flex-direction: column; gap: 16px; }
 .skills-gained { display: flex; flex-direction: column; gap: 14px; }
 .sg-side-title {
@@ -169,4 +169,4 @@
 .contact-cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(245,158,11,0.35);
-}
+} */
