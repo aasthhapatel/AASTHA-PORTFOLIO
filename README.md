@@ -38,45 +38,6 @@ The website provides recruiters and collaborators with a comprehensive overview 
 - 🌐 GitHub Pages Deployment
 
 ---
-
-# 🛠 Tech Stack
-
-## Frontend
-- HTML5
-- CSS3
-- JavaScript
-
-## Programming
-- Python
-- SQL
-- Core Java
-
-## Data Science & AI
-- Machine Learning
-- Deep Learning
-- Data Analysis
-- Feature Engineering
-- Exploratory Data Analysis
-- Predictive Modeling
-
-## Libraries & Frameworks
-- Pandas
-- NumPy
-- Scikit-Learn
-- Matplotlib
-- Seaborn
-- Flask
-- FastAPI
-
-## Tools
-- Power BI
-- Git & GitHub
-- VS Code
-- SQLite
-- Linux
-
----
-
 # 📂 Project Structure
 
 ```
